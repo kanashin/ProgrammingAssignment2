@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## a wrapper for matrix which allows to set and get the inverse of it
+## and a getter/setter of the cached inverse
 
-## Write a short comment describing this function
+## make a matrix wrapper with inverse setter and getter
 
 makeCacheMatrix <- function(matrix = matrix()) {
   inverse <- NULL
@@ -18,7 +18,7 @@ makeCacheMatrix <- function(matrix = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Gets the cached inverse of matrix or generate it if not exists
 
 cacheSolve <- function(matrix, ...) {
   inverse <- matrix$getInverse()
